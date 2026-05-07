@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dev Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">// DEV.FOLIO</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-num">01</div>
+  <div class="hero-content">
+    <div class="hero-tag">// Available for hire &nbsp;&nbsp; ● &nbsp;&nbsp; Open to work</div>
+    <h1 class="hero-title">Your<br>Name<br><span>Here.</span></h1>
+    <p class="hero-sub">Full-Stack Software Developer crafting scalable, performant applications with clean code and bold ideas.</p>
+    <div class="hero-btns">
+      <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View My Work</button>
+      <button class="btn btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get In Touch</button>
+    </div>
+  </div>
+  <div class="scroll-line">Scroll</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid fade-in">
+    <div class="about-text">
+      <div class="sec-label">// 01 — About Me</div>
+      <h2 class="sec-title">Building things<br>that matter.</h2>
+      <p>I'm a software developer with a passion for building elegant solutions to complex problems. I specialise in full-stack development, from designing robust APIs to crafting pixel-perfect UIs.</p>
+      <p>When I'm not coding, I'm exploring new tech, contributing to open source, or obsessing over performance optimisations nobody asked for.</p>
+      <div class="stat-row">
+        <div class="stat"><div class="stat-num">3+</div><div class="stat-label">Years exp.</div></div>
+        <div class="stat"><div class="stat-num">20+</div><div class="stat-label">Projects</div></div>
+        <div class="stat"><div class="stat-num">8+</div><div class="stat-label">Technologies</div></div>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="code-block">
+        <div class="code-dot-row">
+          <div class="code-dot" style="background:#ff5f57"></div>
+          <div class="code-dot" style="background:#ffbd2e"></div>
+          <div class="code-dot" style="background:#28c840"></div>
+        </div>
+        <span class="kw">const</span> <span class="fn">developer</span> = {<br>
+        &nbsp;&nbsp;name: <span class="str">"Your Name"</span>,<br>
+        &nbsp;&nbsp;role: <span class="str">"Full-Stack Dev"</span>,<br>
+        &nbsp;&nbsp;location: <span class="str">"India 🇮🇳"</span>,<br>
+        &nbsp;&nbsp;skills: [<span class="str">"React"</span>, <span class="str">"Node"</span>,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"Python"</span>, <span class="str">"AWS"</span>],<br>
+        &nbsp;&nbsp;available: <span class="kw">true</span>,<br>
+        &nbsp;&nbsp;coffee: <span class="str">"☕ Always"</span>,<br>
+        &nbsp;&nbsp;<span class="fn">hire</span>: () <span class="kw">=></span> {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cm">// best decision ever</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span> <span class="str">"Let's build!"</span><br>
+        &nbsp;&nbsp;}<br>
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sec-label fade-in">// 02 — Tech Stack</div>
+  <h2 class="sec-title fade-in">What I work with.</h2>
+  <div class="skills-grid fade-in">
+    <div class="skill-card">
+      <span class="skill-icon">⚛</span>
+      <div class="skill-name">React / Next.js</div>
+      <div class="skill-lvl">Advanced</div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:90%"></div></div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">🟩</span>
+      <div class="skill-name">Node.js</div>
+      <div class="skill-lvl">Advanced</div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">🐍</span>
+      <div class="skill-name">Python</div>
+      <div class="skill-lvl">Intermediate</div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">🗄</span>
+      <div class="skill-name">SQL / NoSQL</div>
+      <div class="skill-lvl">Advanced</div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">☁</span>
+      <div class="skill-name">AWS / Cloud</div>
+      <div class="skill-lvl">Intermediate</div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">🐳</span>
+      <div class="skill-name">Docker / DevOps</div>
+      <div class="skill-lvl">Intermediate</div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:68%"></div></div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">🔷</span>
+      <div class="skill-name">TypeScript</div>
+      <div class="skill-lvl">Advanced</div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:88%"></div></div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">🔧</span>
+      <div class="skill-name">Git / CI-CD</div>
+      <div class="skill-lvl">Advanced</div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="sec-label fade-in">// 03 — Selected Work</div>
+  <h2 class="sec-title fade-in">Things I've built.</h2>
+  <div class="projects-grid fade-in">
+    <div class="proj-card featured">
+      <div>
+        <span class="proj-tag">Featured Project</span>
+        <div class="proj-title">E-Commerce Platform</div>
+        <div class="proj-desc">A full-stack e-commerce application with real-time inventory, Stripe payments, and admin dashboard. Built for scale — handles 10k+ concurrent users.</div>
+        <div class="proj-stack">
+          <span class="stack-pill">Next.js</span><span class="stack-pill">Node.js</span><span class="stack-pill">PostgreSQL</span><span class="stack-pill">Redis</span><span class="stack-pill">Stripe</span>
+        </div>
+        <a class="proj-link" href="#">View Project →</a>
+      </div>
+      <div class="proj-visual">🛒</div>
+    </div>
+    <div class="proj-card">
+      <span class="proj-tag">API</span>
+      <div class="proj-title">REST API Boilerplate</div>
+      <div class="proj-desc">Production-ready Node.js REST API with auth, rate limiting, logging and Docker support out of the box.</div>
+      <div class="proj-stack"><span class="stack-pill">Node.js</span><span class="stack-pill">Express</span><span class="stack-pill">MongoDB</span><span class="stack-pill">JWT</span></div>
+      <a class="proj-link" href="#">GitHub →</a>
+    </div>
+    <div class="proj-card">
+      <span class="proj-tag">ML / AI</span>
+      <div class="proj-title">Sentiment Analyser</div>
+      <div class="proj-desc">NLP-based tool that analyses customer reviews and classifies sentiment with 94% accuracy using a fine-tuned BERT model.</div>
+      <div class="proj-stack"><span class="stack-pill">Python</span><span class="stack-pill">FastAPI</span><span class="stack-pill">HuggingFace</span><span class="stack-pill">React</span></div>
+      <a class="proj-link" href="#">View Demo →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner fade-in">
+    <div class="sec-label">// 04 — Let's Talk</div>
+    <div class="contact-title">Got an<br>idea? Let's<br><span>build it.</span></div>
+    <p style="font-family:var(--mono);font-size:.85rem;opacity:.5;max-width:400px;line-height:1.8">Whether you have a project in mind, a role to fill, or just want to chat about code — my inbox is always open.</p>
+    <div class="contact-links">
+      <a class="contact-link" href="mailto:hello@yourname.com">hello@yourname.com</a>
+      <a class="contact-link" href="#">GitHub</a>
+      <a class="contact-link" href="#">LinkedIn</a>
+      <a class="contact-link" href="#">Twitter</a>
+    </div>
+    <div style="margin-top:2.5rem">
+      <button class="btn btn-primary" onclick="window.location='mailto:hello@yourname.com'">Send a Message →</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Your Name. All rights reserved.</span>
+  <span>Designed & Built with ♥</span>
+</footer>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
